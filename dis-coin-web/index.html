@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+		<link rel="manifest" href="favicon/site.webmanifest">
+		<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		
+		<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  		<script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+		<script src="assets/js/TransactionHandler.js"></script>
+		<script src="assets/js/other.js"></script>
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+		<title>Dis-Coin</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#two">Information</a></li>
+							<li><a href="#one">Roadmap</a></li>
+							<li><a href="#three">Deposit</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro  https://discord.gg/hCcgzjSAQj-->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>Dis-Coin</h1>
+							<p>A smart contract that lets you easily manage money on <a href="#intro">discord</a><br />
+							Send, receive, gamble and more without any fees. Only with Dis-Coin</a>.</p>
+							<ul class="actions">
+								<li><a href="https://discord.gg/FbHwqgxn98" class="button scrolly">Join our discord</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Information</h2>
+							<p>Here you can find any information about techicalities of the smart contract</p>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-code"></span>
+									<h3>Contract address</h3>
+									<p>0x0000000000000000 (BEP-20)</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-cog"></span>
+									<h3>Total supply</h3>
+									<p>Dis-Coin's total supply is limited at 10,000,000 (ten million).</p>					
+								</section>
+								<section>
+									<span class="icon solid major fa-link"></span>
+									<h3>Transaction taxes</h3>
+									<p>1% of all transactions will be sent to a wallet which will be used by our bot for different purposes including gambling and marketing.</p>
+								</section>
+								<section>
+									<span class="icon major fa-gem"></span>
+									<h3>Discord deposits</h3>
+									<p>With just a few clicks you will send your coins to a discord wallet and will receive them on your discord user.<br />
+										Transactions within discord won't have any fees and will be instant.<br />Withdrawing is even easier! Just a single command and the coins are on your way</p>
+								</section>
+							</div>
+							<!-- <ul class="actions">
+								<li><a href="generic.html" class="button">Learn more</a></li>
+							</ul> -->
+						</div>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<div class="content">
+								<div class="inner">
+									<h2>November</h2>
+									<ul>
+										<li>Launch of the discord server and web</li>
+										<li>Updates and showcase of the bot possibilities in discord</li>
+										<li>Team expansion</li>
+										<li>A raffle for a spot on presale will be announced on discord</li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="content">
+								<div class="inner">
+									<h2>December</h2>
+									<ul>
+										<li>A testing team will be gathered to find any issues with the bot before launch</li>
+										<li>Initial launch of the smart contract</li>
+										<li>Release of new and more interactive web</li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="content">
+								<div class="inner">
+									<h2>January</h2>
+									<ul>
+										<li>Start of marketing campaign</li>
+										<li>Listing on coingecko and coinmarketcap</li>
+										<li>List will be updated...</li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Deposit</h2>
+							<p>Depositing is very easy. Just bind your discord user id with your wallet address.<br />Already done that? Just input the amount of coins you want to deposit and click Deposit! And you're done.</p>
+							<div class="split style1">
+								<section>
+									<section>
+										<form method="post" action="#">
+											<div class="fields">
+												<div class="field half">
+													<label for="userid">Discord user ID</label>
+													<input type="text" name="userid" id="userid" />
+												</div>
+											</div>
+											<ul class="actions">
+												<li><a onclick="Bind();" class="button bind">Bind</a></li>
+											</ul>
+										</from>
+									</section>
+									<section>
+										<form method="post" action="#">
+											<div class="fields">
+												<div class="field half">
+													<label for="coins">Amount</label>
+													<input type="text" name="coins" id="coins" />
+												</div>
+											</div>
+											<ul class="actions">
+												<li><a onclick="Depositas();" class="button deposit">Deposit</a></li>
+											</ul>
+										</form>
+									</section>
+								</section>
+								<section>
+									<ul class="Contact">
+										<li>
+											<h3>Email</h3>
+											<a href="#">Scott@Dis-Coin.com</a>
+										</li>
+										<li>
+											<h3>Discord</h3>
+											<span>Michael_Scott#6544</span>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Dis-Coin. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			
+	</body>
+</html>

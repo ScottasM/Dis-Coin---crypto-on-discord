@@ -1,0 +1,18 @@
+{
+  "name": "dcoin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Scottas",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.1.0",
+    "git": "^0.1.5",
+    "moralis": "^0.0.52",
+    "node": "^16.6.1",
+    "node.js": "0.0.1-security"
+  }
+}
