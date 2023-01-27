@@ -15,3 +15,4 @@ The main code in this repo is Dis-Coin discord bot with a few essential features
 The website design was taken from html5up.net (thanks to them) and changed a little bit. I also added the binding and depositing fields (assets/js/TransactionHandler)
 
 
+#Update: 2023-01-27. This is made on currently a very outdated version of discord.js. If anyone is actually willing to use this, good luck :) I won't be maintaining this, as it was just a side project.
